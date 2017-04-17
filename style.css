@@ -1,0 +1,330 @@
+/* RESET */
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+	margin: 0;
+	font: 16px; 
+	background: url(images/diagonal_waves.png) repeat left top;
+}
+
+iframe {
+  border: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+blockquote,
+figure,
+button {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-size: inherit; }
+
+strong {
+  font-weight: bold; }
+
+sup {
+  position: relative;
+  top: -.5em;
+  font-size: 65%;
+  line-height: 0;
+  vertical-align: baseline; }
+
+a,
+button {
+  color: inherit; }
+
+a {
+  text-decoration: none; }
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+  -webkit-font-smoothing: inherit; }
+  button:focus {
+    outline: 0; }
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0; }
+
+/* FONTS */
+
+@font-face {
+  font-family: 'newtext';
+  src: url("fonts/newtxtn.ttf") format("truetype"); 
+}
+
+/* BASIC LAYOUT */
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 960px;
+	width: 80%;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 16px;
+}
+
+p {
+	font-size: 1.25rem;
+	margin-bottom: 32px;
+	font-family: Arial;
+	line-height: 30px;
+}
+
+h1, h2, h3, a {
+	color: #1A4683;
+	text-transform: uppercase;
+}
+
+
+/* HEADER */
+
+.header h1 {
+	font-family: newtext;
+	font-weight: 300;
+	font-size: 4rem;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.header .aps {
+	font-size: 2.125rem;
+	margin-left: -12px;
+	text-transform: none;
+}
+
+.banner {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+
+	margin-bottom: 30px;
+}
+
+/* NAVIGATION */
+
+.navigation {
+	margin-bottom:50px;
+}
+
+.navigation ul {
+	list-style: none;
+	text-align: center;
+}
+
+.navigation ul li {
+	display: inline-block;
+}
+
+.navigation ul li a {
+	padding: 10px 20px 10px 20px;
+	font-size: 20px;
+}
+
+.navigation ul li a:hover {
+	border-top: 2px solid #1A4683;
+}
+
+/* TO TOP */
+
+.to-top {
+	font-size: 16px;
+	color: #009DFF;
+}
+
+.to-top:hover {
+	border-bottom: 1px solid #009DFF;
+}
+
+/* Contact + Profile */
+
+.contact .address {
+	margin: 36px 0;
+}
+
+.contact .address h3 {
+	font-size: 1.5rem;
+}
+
+.contact .address p {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	line-height: 20px;
+	font-size: 1.125rem;
+}
+
+.contact .profile {
+	max-width: 45%;
+	display: inline-block;
+}
+
+.contact-right {
+	float: right;	
+}
+
+/* footer */
+
+.footer {
+	background: #0B2C83;
+	margin-bottom: 30px;
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.footer:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.footer img {
+	margin-left: 30px;
+	float: left;
+}
+
+.footer ul {
+	list-style: none;
+	text-align: center;
+	float: right;
+	margin-top: 7px;
+	margin-right: 40px;
+}
+
+.footer ul li {
+	display: inline-block;
+	color: white;
+	font-size: 0.75rem;
+}
+
+.footer .dot {
+	font-size: 0.5rem;
+	display: inline;
+	margin: 0 5px;
+	color: white;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 620px) {
+	
+	.wrapper {
+		width: 95%;
+	}
+
+	/* Text */
+	
+	.header h1 {
+		font-size: 2rem;
+	}
+
+	.header .aps {
+		font-size: 1rem;
+		margin-left: 0px;
+	}
+
+	h2 {
+		font-size: 1.125rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+
+	/* Navigation */
+	
+	.navigation {
+		margin-bottom: 0px;
+	}
+
+	.navigation ul {
+		list-style: none;
+		text-align: center;
+	}
+
+	.navigation ul li {
+		margin-bottom: 25px;
+	}
+
+	.navigation ul li a {
+		padding: 5px 40px 10px 40px;
+		font-size: 1.125rem;
+	}
+
+	.navigation ul li a:hover {
+		border-top: 1px solid #1A4683;
+	}
+
+	/* Navigation */
+	.contact .address h3{
+		font-size: 1.125rem;
+	}
+
+	.contact .profile {
+		max-width: 100%;
+		display: block;
+	}
+
+	.contact .address p {
+		font-size: 1rem;
+	}
+	
+	/* Footer */
+	
+	.footer {
+		padding: 10px 0;
+	}
+
+	.footer img {
+		margin: 0 auto;
+		float: none;
+		display: block;
+	}
+
+	.footer ul {
+		float: none;
+		margin-right: 0px;
+	}
+
+	.footer ul li {
+		display: inline-block;
+		color: white;
+		font-size: 0.75rem;
+	}
+
+	.footer .dot {
+		display: block;
+	}
+}
